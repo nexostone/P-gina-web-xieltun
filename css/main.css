@@ -100,6 +100,7 @@ body {
     font-family: 'mukta_mahee';
     font-weight: 300;
     transition: background-color .3s ease;
+    color: black;
 }
 
 .hero-button:hover {
