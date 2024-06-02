@@ -1,0 +1,185 @@
+@import url(./fonts.css);
+
+* {
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #e4d08e55;
+}
+
+body,ul,li,label,a,h1,h2,h3,h4 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --bg-color: #F5F3ED;
+    --bg-color-light-hover: #fcf9f2;
+    --bg-color-hover: #f3ecd6;
+    --highlight-color: #98864b;
+    background-color: var(--bg-color);
+}
+
+/*--- HEADER ---*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#F5F3ED,#F5F3ED00);
+    padding: 30px 20px 90px;
+    position: relative;
+}
+
+.header__logo {
+    width: clamp(100px, 30%, 200px);
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    object-fit: contain;
+}
+
+.header__logo-link {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo:hover {
+    filter: drop-shadow(0 0 .25px #000 );
+}
+
+.menu-button, .search-button {
+    font-weight: 200;
+    text-decoration: none;
+    color: #000;
+    transition: color .3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.search-button {
+    z-index: 15;
+}
+
+.menu-button:hover {
+    color: var(--highlight-color);
+    transition: color .3s ease;
+}
+
+.search-button:hover {
+    color: var(--highlight-color);
+    transition: color .3s ease;
+}
+
+
+/*--- OFF-SCREEN-MENU ---*/
+
+.off-screen-menu {
+    position: fixed;
+    height: calc();
+    background-color: var(--bg-color);
+    left: -100%;
+    top: 0;
+    font-size: 2rem;
+    z-index: 5;
+    padding-top: clamp(12dvh,12%,18dvh);
+    transition: .3s ease;
+    width: clamp(100%,200px,30%);
+    display: flex;
+    justify-content: center;
+}
+
+.off-screen-menu.active {
+    left: 0;
+    transition: .3s ease;
+}
+
+body:has(.off-screen-menu.active) {
+    overflow-y: hidden;
+}
+
+.off-screen-menu.inactive {
+    left: -100%;
+}
+
+.off-screen-menu__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    font-family: 'mukta mahee';
+    font-weight: 100;
+    list-style: none;
+    height: 100dvh;
+    width: clamp(600px,90%,1000px);
+}
+
+.prueba {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: .25px solid #222;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.prueba:hover {
+    color: #98864b;
+    background-color:  var(--bg-color-light-hover);
+}
+
+.list-img {
+    width: clamp(100px, 30%, 400px);
+    height: 80%;
+    margin: clamp(10px,20px,40px);
+}
+
+.--cenote-img {
+    object-fit: contain;
+}
+
+.off-screen-menu__list-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.off-screen-menu__list-item {
+}
+
+.off-screen-menu__list-item:hover {
+    color: #98864b;
+    background-color:  var(--bg-color-light-hover);
+}
+
+/*--- OFF-SCREEN-SEARCH ---*/
+
+.off-screen-search {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    margin: 0;
+    z-index: 11;
+    padding: 25px 0;
+    transition: .3s ease;
+}
+
+.off-screen-search__input {
+    margin-left: 20px;
+    width: clamp(300px, 60%, 800px);
+    padding: 10px;
+    font-family: 'mukta mahee';
+    border: 1px solid #111;
+}
+
+body:has(.off-screen-search.active) {
+    overflow-y: hidden;
+}
+
+.off-screen-search.active {
+    top: 0;
+    transition: .3s ease;
+}

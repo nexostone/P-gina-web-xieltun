@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'mukta_mahee';
+    src: url(../fonts/Mukta_Mahee/MuktaMahee-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'mukta_mahee';
+    src: url(fonts/Mukta_Mahee/MuktaMahee-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "mukta_mahee";
+    src: url(../fonts/Mukta_Mahee/MuktaMahee-Regular.ttf);
+    font-weight: 400;
+}
