@@ -194,9 +194,9 @@ body:has(.off-screen-search.active) {
 .contact {
     text-align: center;
     background-color: var(--bg-color-light-hover);
-    width: clamp(500px, 50%, 600px);
+    width: clamp(350px, 70%, 600px);
     margin: 10px auto;
-    padding: 10px;
+    padding: 3%;
 }
 
 .contact__title {
@@ -215,7 +215,7 @@ body:has(.off-screen-search.active) {
 
 .contact__input {
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px;
 }
 
 .contact__input-label {
@@ -226,7 +226,7 @@ body:has(.off-screen-search.active) {
 .contact__submit {
     background-color: #e3dece;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     cursor: pointer;
 }
 
