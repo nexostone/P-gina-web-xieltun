@@ -188,7 +188,7 @@ body:has(.off-screen-search.active) {
 
 .contact__wrapper {
     padding: 20px 0; 
-    background-image: linear-gradient(#fff9, #fff9),url(../images/xieltun\ hotel.png);
+    background-image: linear-gradient(#fff5, #fff5),url(../images/xieltun\ hotel.png);
 }
 
 .contact {
