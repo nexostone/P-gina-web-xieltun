@@ -8,7 +8,7 @@
     background-color: #e4d08e55;
 }
 
-body,ul,li,label,a,h1,h2,h3,h4 {
+body,ul,li,label,a,h1,h2,h3,h4,p {
     margin: 0;
     padding: 0;
 }
@@ -186,11 +186,17 @@ body:has(.off-screen-search.active) {
 
 /*--- CONTACT SECTION ---*/
 
+.contact__wrapper {
+    padding: 20px 0; 
+    background-image: linear-gradient(#fff9, #fff9),url(../images/xieltun\ hotel.png);
+}
+
 .contact {
     text-align: center;
     background-color: var(--bg-color-light-hover);
-    margin: 50px;
     width: clamp(500px, 50%, 600px);
+    margin: 10px auto;
+    padding: 10px;
 }
 
 .contact__title {
@@ -198,13 +204,12 @@ body:has(.off-screen-search.active) {
     font-family: 'mukta mahee';
     font-weight: 200;
     font-size: 2.5rem;
+    border-bottom: .5px solid #222;
 }
 
 .contact__form {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -213,3 +218,65 @@ body:has(.off-screen-search.active) {
     padding: 10px 40px;
 }
 
+.contact__input-label {
+    font-family: 'mukta mahee';
+    color: #222;
+}
+
+.contact__submit {
+    background-color: #e3dece;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact__submit:hover {
+    background-color: #e3dece99;
+}
+
+.--textarea {
+    resize: none;
+}
+
+/*--- FOOTER ---*/
+
+.footer {
+    background-color: var(--bg-color-light-hover);
+    padding: 20px;
+    height: 30dvh;
+}
+
+.footer__subtitle {
+    font-family: 'mukta mahee';
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.footer__social-media {
+    display: flex;
+    gap: 10px;
+    width: 20%;
+}
+
+.social-media-wrapper {
+    border-right: .5px solid var(--highlight-color);
+    width: 30%;
+    height: 100%;
+}
+
+.footer__social-media-icon {
+    width: 1.75rem;
+}
+
+.footer__social-media-icon:hover {
+    filter: contrast(0);
+}
+
+.copyright {
+    font-family: 'mukta mahee';
+    font-size: .75rem;
+    background-color: #98864b42;
+    padding-left: 10px;
+    text-align: center;
+}
