@@ -126,6 +126,8 @@ body {
     width: clamp(100%,200px,30%);
     display: flex;
     justify-content: center;
+    container-name: off-search-menu;
+    container-type: inline-size;
 }
 
 .off-screen-menu.active {
@@ -189,6 +191,13 @@ body:has(.off-screen-menu.active) {
 .off-screen-menu__list-item:hover {
     color: #98864b;
     background-color:  var(--bg-color-light-hover);
+}
+
+.off-screen-menu__social-media {
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 8%;
 }
 
 /*--- OFF-SCREEN-SEARCH ---*/
@@ -312,6 +321,14 @@ p {
 @media screen and (min-width: 1000px) {
     .header-and-main-hero-wrapper {
         height: 100dvh;
+    }
+
+    
+}
+
+@container off-search-menu (min-width: 800px) {
+    .off-screen-menu__social-media {
+        display: none;
     }
 }
 
