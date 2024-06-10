@@ -210,8 +210,12 @@ body:has(.off-screen-menu.active) {
     width: clamp(300px, 60%, 800px);
     padding: 10px;
     font-family: 'mukta mahee';
-    border: 1px solid #111;
-    border-radius: 10px;
+    border: 1px solid #acacac;
+    outline: none;
+}
+
+.off-screen-search__input:focus {
+    outline: 2px solid rgb(255, 255, 216);
 }
 
 body:has(.off-screen-search.active) {
@@ -232,6 +236,7 @@ body:has(.off-screen-search.active) {
     flex-direction: column;
     gap: 15px;
     height: 300dvh;
+    position: relative;
 }
 
 .main-hero h2 {
@@ -248,6 +253,8 @@ p {
 }
 
 .main-hero__img-container {
+    container-name: main-hero;
+    container-type: inline-size;
 }
 
 .main-hero__img {
@@ -255,6 +262,7 @@ p {
     max-width: 80%;
     max-height: 500px;
 }
+
 
 /* --- FOOTER --- */
 
@@ -301,4 +309,19 @@ p {
 
 /*--- MEDIA QUERIES ---*/
 
+@media screen and (min-width: 1000px) {
+    .header-and-main-hero-wrapper {
+        height: 100dvh;
+    }
+}
+
 /*--- ANIMATIONS ---*/
+
+@keyframes text-appear {
+    0% {
+        left: 50dvw;
+    }
+    100% {
+        left: 0;
+    }
+}
