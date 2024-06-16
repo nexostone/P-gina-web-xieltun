@@ -28,11 +28,11 @@
             <ul class="off-screen-menu__list">
                 <a class="off-screen-menu__list-link" href="pages/ixchel.html">
             <div class="prueba">
-                <li class="off-screen-menu__list-item">IXCHEL</li><img class="list-img" src="images/Captura de Pantalla 2024-06-01 a la(s) 9.33.56.png" alt="">
+                <li class="off-screen-menu__list-item">IXCHEL</li><img loading="lazy" class="list-img" src="images/Captura de Pantalla 2024-06-01 a la(s) 9.33.56.png" alt="">
             </div></a>
             <a class="off-screen-menu__list-link" href="pages/experiences.html">
             <div class="prueba">
-                <li class="off-screen-menu__list-item">EXPERIENCIAS</li><img class="list-img --cenote-img" src="images/cenote.jpg" alt="">
+                <li class="off-screen-menu__list-item">EXPERIENCIAS</li><img loading="lazy" class="list-img --cenote-img" src="images/cenote.jpg" alt="">
             </div></a>
             <a class="off-screen-menu__list-link" href="pages/careers.html">
             <div class="prueba">
@@ -51,10 +51,16 @@
             <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
             <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
             <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
+            <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
+            <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
+            <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
+            <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
         </div>
     </div>
     </header>
   
+    <div class="hero__title-container"><h1 class="hero__title">EL PROYECTO SUSTENTABLE MONUMENTAL DE IMPACTO CERO</h1></div>
+
     <div class="hero-buttons">
         <a class="button-link" href="./pages/ixchel.html">
         <button class="hero-button  --lower-opacity">Ver el proyecto</button>
@@ -64,15 +70,24 @@
     </a>
     </div>
 </div>
+
+<!-----MAIN----->
+
+<main>
 <!-----MAIN HERO----->
 <div class="main-hero">
     <h2>NATURE RETREAT</h2>
     <p>THE JUNGLE <br>WONDERS</p>
     <div class="main-hero__img-container">
-        <img class="main-hero__img" src="images/xieltun hotel.png" alt="">
+        <img loading="lazy" class="main-hero__img" src="images/xieltun hotel.png" alt="">
     </div>
+    <div class="hero-buttons --main-hero-buttons">
+        <a class="button-link" href="./pages/ixchel.html">
+        <button class="hero-button  --lower-opacity --secondary-button">DESCUBRELO</button>
+    </a>
 </div>
 </div>
+</main>
 
 <script src="scripts/search-button.js"></script>
 <script src="scripts/hamburguer-menu.js"></script>
@@ -86,9 +101,47 @@
 
 <!-----FOOTER----->
 <footer class="footer">
+    <form class="footer__email-singup">
+        <h2 class="email-singup__subtitle">CONÉCTA CON XIELTUN</h2>
+        <p class="email-singup__text">Dejannos tu email para enterarte de los últimos eventos y promociones</p>
+        <div class="email-singup__inputs-container">
+        <input required placeholder="Email..." class="email-singup__input" type="email">
+        <input class="material-symbols-outlined email-singup__submit" type="submit" value="arrow_forward"></input>
+    </div>
+    </form>
+    <div class="footer__wrapped-menu">
+        <details class="footer__desplegable">
+            <summary class="footer__desplegable-summary"><strong>SOBRE NOSOTROS</strong><span class="material-symbols-outlined --desplegable-chevron">chevron_right</span></summary>
+            <ul class="footer__desplegable__list">
+                <li class="footer__desplegable__list-item"><a class="footer__desplegable__list-link" href="">Nuestra historia</a></li>
+                <li class="footer__desplegable__list-item"><a class="footer__desplegable__list-link" href="">Sustentabilidad y tecnología</a></li>
+                <li class="footer__desplegable__list-item"><a class="footer__desplegable__list-link" href="">Cultura Maya</a></li>
+            </ul>
+        </details>
+        <details class="footer__desplegable">
+            <summary class="footer__desplegable-summary"><strong>INVERSIÓN</strong><span class="material-symbols-outlined --desplegable-chevron">chevron_right</span></summary>
+            <ul class="footer__desplegable__list">
+                <li class="footer__desplegable__list-item"><a class="footer__desplegable__list-link" href="">Descargar Pitch deck</a></li>
+                <li class="footer__desplegable__list-item"><a class="footer__desplegable__list-link" href="">Fondo de inversión Xieltun</a></li>
+            </ul>
+        </details>
+        <details class="footer__desplegable">
+            <summary class="footer__desplegable-summary"><strong>CARRERAS</strong><span class="material-symbols-outlined --desplegable-chevron">chevron_right</span></summary>
+            <ul class="footer__desplegable__list">
+                <li class="footer__desplegable__list-item"><a class="footer__desplegable__list-link" href="">Nuestra historia</a></li>
+                <li class="footer__desplegable__list-item"><a class="footer__desplegable__list-link" href="">Tecnología y sustentabilidad</a></li>
+                <li class="footer__desplegable__list-item"><a class="footer__desplegable__list-link" href="">Cultura Maya</a></li>
+            </ul>
+        </details>
+        
+
+    </div>
     <div class="social-media-wrapper">
-        <h2 class="footer__subtitle">Siguenos</h2>
+        <h2 class="footer__subtitle">SIGUE A XIELTUN EN REDES SOCIALES</h2>
     <div class="footer__social-media">
+        <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
+        <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
+        <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
         <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
         <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
         <a href="https://www.instagram.com/xieltun/?hl=es-la" target="_blank"><img class="footer__social-media-icon" src="images/Logos/instagram.svg" alt=""></a>
