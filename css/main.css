@@ -371,6 +371,8 @@ p {
 
 .email-singup__input::placeholder {
     opacity: .4;
+    position: absolute;
+    left: 10px;
 }
 
 .email-singup__submit {
