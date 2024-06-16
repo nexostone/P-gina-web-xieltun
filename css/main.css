@@ -355,7 +355,7 @@ p {
 }
 
 .email-singup__input {
-    padding: 8px 40px;
+    padding: 8px 70px 8px 10px;
     border: .5px solid #000;
     font-size: 1rem;
     outline: none;
@@ -508,10 +508,6 @@ details[open] .--desplegable-chevron {
         font-size: larger;
     }
 
-    .email-singup__input {
-        padding: 8px 80px;
-    }
-
 }
 
 @media screen and (min-width: 1300px) {
@@ -522,7 +518,7 @@ details[open] .--desplegable-chevron {
     }
 
     .email-singup__input {
-        padding: 8px 80px;
+        padding: 8px 70px 8px 10px;
     }
 }
 
